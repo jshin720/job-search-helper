@@ -1,23 +1,19 @@
 import { useState } from 'react'
+import './dragDrop.css'
 
 export default function DragDrop() {
   const [files, setFiles] = useState(null);
 
 
   return (
-    <>
-      {!files && (
-        <div
-          className='dropzone'
-          onDragOver={handleDragOver}
-          onDrop={handleDrop}
-        >
-          <h1>Drag or Drop Cover Letter to Upload</h1>
-          <h1>Or</h1>
-          <button>Select File</button>
+    <form id="form-file-upload">
+      <input type="file" id="input-file-upload" multiple={false} />
+      <label id="label-file-upload" htmlFor="input-file-upload">
+        <div>
+          <p>Drag and drop your file here or</p>
+          <button className="upload-button">Upload a file</button>
         </div>
-       )
-      }
-    </>
-  )
+      </label>
+    </form>
+  );
 }
