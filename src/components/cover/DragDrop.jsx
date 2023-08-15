@@ -19,6 +19,7 @@ export default function DragDrop(props) {
   }
 
   const handleChange = (e) => {
+    console.log("handleChange", e.target)
     e.preventDefault();
     if (e.target.files && e.target.files[0]){
       
@@ -27,6 +28,7 @@ export default function DragDrop(props) {
   }
 
   const handleDrop = (e) => {
+    console.log("handleDrop", e);
     e.preventDefault();
     e.stopPropagation();
     setDragActive(false);
@@ -50,7 +52,7 @@ export default function DragDrop(props) {
         ref={inputRef}
         type="file"
         id="input-file-upload"
-        multiple={true}
+        multiple={false}
         onChange={handleChange}
       />
       <label id="label-file-upload" htmlFor="input-file-upload">
