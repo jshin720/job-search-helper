@@ -16,6 +16,7 @@ function Cover() {
   return (
     <div>
       <DragDrop inputRef={inputRef} />
+      
       <form onSubmit={handleSubmit}>
         <label htmlFor="job-position">Position</label>
         <input
