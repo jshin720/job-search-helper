@@ -18,25 +18,25 @@ export default function DragDrop(props) {
     }
   }
 
-  // const handleChange = (e) => {
-  //   console.log("handleChange", e.target)
-  //   e.preventDefault();
-  //   if (e.target.files && e.target.files[0]){
+  const handleChange = (e) => {
+    console.log("handleChange", e.target)
+    e.preventDefault();
+    if (e.target.files && e.target.files[0]){
       
-  //   }
+    }
 
-  // }
+  }
 
-  // const handleDrop = (e) => {
-  //   console.log("handleDrop", e);
-  //   e.preventDefault();
-  //   e.stopPropagation();
-  //   setDragActive(false);
+  const handleDrop = (e) => {
+    console.log("handleDrop", e);
+    e.preventDefault();
+    e.stopPropagation();
+    setDragActive(false);
 
-  //   if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+    if (e.dataTransfer.files && e.dataTransfer.files[0]) {
 
-  //   }
-  // }
+    }
+  }
 
   const onButtonClick = () => {
     inputRef.current.click()
