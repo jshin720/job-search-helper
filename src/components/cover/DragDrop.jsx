@@ -18,14 +18,14 @@ export default function DragDrop(props) {
     }
   }
 
-  const handleChange = (e) => {
-    console.log("handleChange", e.target)
-    e.preventDefault();
-    if (e.target.files && e.target.files[0]){
+  // const handleChange = (e) => {
+  //   console.log("handleChange", e.target)
+  //   e.preventDefault();
+  //   if (e.target.files && e.target.files[0]){
       
-    }
+  //   }
 
-  }
+  // }
 
   // const handleDrop = (e) => {
   //   console.log("handleDrop", e);
