@@ -18,16 +18,7 @@ export default function DragDrop(props) {
 
   }
 
-  const handleDrop = (e) => {
-    console.log("handleDrop", e);
-    e.preventDefault();
-    e.stopPropagation();
-    setDragActive(false);
 
-    if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-
-    }
-  }
 
   const onButtonClick = () => {
     inputRef.current.click()

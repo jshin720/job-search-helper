@@ -18,6 +18,15 @@ function Cover() {
        setDragActive(false);
      }
    };
+     const handleDrop = (e) => {
+       console.log("handleDrop", e);
+       e.preventDefault();
+       e.stopPropagation();
+       setDragActive(false);
+
+       if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+       }
+     };
 
   const handleSubmit = (e) => {
     e.preventDefault();
