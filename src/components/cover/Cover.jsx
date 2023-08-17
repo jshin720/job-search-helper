@@ -8,6 +8,17 @@ function Cover() {
 
   const inputRef = useRef(null);
 
+   const handleDrag = (e) => {
+     e.preventDefault();
+     e.stopPropagation();
+
+     if (e.type === "dragenter" || e.type === "dragover") {
+       setDragActive(true);
+     } else if (e.type === "dragleave") {
+       setDragActive(false);
+     }
+   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(e);

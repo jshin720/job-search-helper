@@ -7,16 +7,7 @@ export default function DragDrop(props) {
 
   // function handle the drag - if the use is dragging something into the component.
   //drag event listener
-  const handleDrag = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-
-    if (e.type === "dragenter" || e.type === "dragover") {
-      setDragActive(true);
-    } else if (e.type === "dragleave") {
-      setDragActive(false);
-    }
-  }
+ 
 
   const handleChange = (e) => {
     console.log("handleChange", e.target)
