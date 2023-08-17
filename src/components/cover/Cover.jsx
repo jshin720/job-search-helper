@@ -4,6 +4,7 @@ import DragDrop from "./DragDrop";
 function Cover() {
   const [jobPosition, setJobPosition] = useState("");
   const [jobCompany, setJobCompany] = useState("");
+  const [dragActive, setDragActive] = useState(false)
 
   const inputRef = useRef(null);
 
