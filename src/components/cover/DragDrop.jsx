@@ -9,14 +9,6 @@ export default function DragDrop(props) {
   //drag event listener
  
 
-  const handleChange = (e) => {
-    console.log("handleChange", e.target)
-    e.preventDefault();
-    if (e.target.files && e.target.files[0]){
-      
-    }
-
-  }
 
 
 
