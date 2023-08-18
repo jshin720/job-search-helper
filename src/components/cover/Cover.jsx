@@ -40,7 +40,9 @@ function Cover() {
     };
 
 
-
+  const onButtonClick = () => {
+    inputRef.current.click();
+  };
   return (
     <div>
       <DragDrop inputRef={inputRef} />

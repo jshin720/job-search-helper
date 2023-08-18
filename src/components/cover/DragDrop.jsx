@@ -12,9 +12,7 @@ export default function DragDrop(props) {
 
 
 
-  const onButtonClick = () => {
-    inputRef.current.click()
-  }
+  
 
   return (
     <form
