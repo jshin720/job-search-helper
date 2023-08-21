@@ -15,11 +15,7 @@ export default function DragDrop(props) {
   
 
   return (
-    <form
-      id="form-file-upload"
-      onDragEnter={handleDrag}
-      onSubmit={(e) => e.preventDefault()}
-    >
+    
       <input
         ref={inputRef}
         type="file"

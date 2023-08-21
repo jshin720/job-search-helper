@@ -45,7 +45,11 @@ function Cover() {
   };
   return (
     <div>
-      <DragDrop inputRef={inputRef} />
+      <form
+      id="form-file-upload"
+      onDragEnter={handleDrag}
+      onSubmit={(e) => e.preventDefault()}
+    >
       
       <form onSubmit={handleSubmit}>
         <label htmlFor="job-position">Position</label>
