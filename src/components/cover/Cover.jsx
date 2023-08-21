@@ -46,11 +46,14 @@ function Cover() {
   return (
     <div>
       <form
-      id="form-file-upload"
-      onDragEnter={handleDrag}
-      onSubmit={(e) => e.preventDefault()}
-    >
-      
+        id="form-file-upload"
+        onDragEnter={handleDrag}
+        onSubmit={(e) => e.preventDefault()}
+      >
+
+        
+      </form>
+
       <form onSubmit={handleSubmit}>
         <label htmlFor="job-position">Position</label>
         <input
@@ -66,7 +69,7 @@ function Cover() {
           value={jobCompany}
           onChange={(e) => setJobCompany(e.target.value)}
         />
-        <input type="submit" value="value"/>
+        <input type="submit" value="value" />
       </form>
     </div>
   );

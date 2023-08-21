@@ -38,6 +38,6 @@ export default function DragDrop(props) {
           onDrop={handleDrop}
         ></div>
       )}
-    </form>
+    
   );
 }
