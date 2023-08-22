@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import DragDrop from "./DragDrop";
+// import DragDrop from "./DragDrop";
 
 function Cover() {
   const [jobPosition, setJobPosition] = useState("");
