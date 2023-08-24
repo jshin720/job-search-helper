@@ -12,21 +12,21 @@ function Cover() {
      e.preventDefault();
      e.stopPropagation();
 
-  //   //  if (e.type === "dragenter" || e.type === "dragover") {
-  //   //    setDragActive(true);
-  //   //  } else if (e.type === "dragleave") {
-  //   //    setDragActive(false);
-  //   //  }
-  //  };
-    //  const handleDrop = (e) => {
-    //    console.log("handleDrop", e);
-    //    e.preventDefault();
-    //    e.stopPropagation();
-    //    setDragActive(false);
+     if (e.type === "dragenter" || e.type === "dragover") {
+       setDragActive(true);
+     } else if (e.type === "dragleave") {
+       setDragActive(false);
+     }
+   };
+     const handleDrop = (e) => {
+       console.log("handleDrop", e);
+       e.preventDefault();
+       e.stopPropagation();
+       setDragActive(false);
 
-    //    if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-    //    }
-    //  };
+       if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+       }
+     };
 
   const handleSubmit = (e) => {
     e.preventDefault();
