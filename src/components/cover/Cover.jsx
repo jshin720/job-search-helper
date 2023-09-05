@@ -6,7 +6,7 @@ function Cover() {
   const [jobCompany, setJobCompany] = useState("");
   const [dragActive, setDragActive] = useState(false)
 
-  const inputRef = useRef(null);
+  // const inputRef = useRef(null);
 
    const handleDrag = (e) => {
      e.preventDefault();
