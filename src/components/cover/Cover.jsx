@@ -2,14 +2,7 @@ import React, { useState, useRef } from "react";
 // import DragDrop from "./DragDrop";
 
 function Cover() {
-  const [jobPosition, setJobPosition] = useState("");
-  const [jobCompany, setJobCompany] = useState("");
-  const [dragActive, setDragActive] = useState(false)
-
-  const inputRef = useRef(null);
-
-   const handleDrag = (e) => {
-     e.preventDefault();
+  
      e.stopPropagation();
 
      if (e.type === "dragenter" || e.type === "dragover") {
