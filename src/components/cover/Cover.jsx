@@ -5,22 +5,6 @@ function Cover() {
   
     
     
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(e);
-  }
-    // const handleChange = (e) => {
-    //   console.log("handleChange", e.target);
-    //   e.preventDefault();
-    //   if (e.target.files && e.target.files[0]) {
-    //   }
-    // };
-
-
-  // const onButtonClick = () => {
-  //   inputRef.current.click();
-  // };
   return (
     <div>
       <form
