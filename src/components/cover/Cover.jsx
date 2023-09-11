@@ -19,24 +19,7 @@ function Cover() {
         )}
       </form>
 
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="job-position">Position</label>
-        <input
-          id="job-position"
-          type="text"
-          value={jobPosition}
-          onChange={(e) => setJobPosition(e.target.value)}
-        />
-        <label for="company-name">Company</label>
-        <input
-          id="company-name"
-          type="text"
-          value={jobCompany}
-          onChange={(e) => setJobCompany(e.target.value)}
-        />
-        <input type="submit" value="value" />
-      </form>
-    </div>
+      
   );
 }
 
