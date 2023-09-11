@@ -6,26 +6,7 @@ function Cover() {
     
     
   return (
-    <div>
-      <form
-        id="form-file-upload"
-        onDragEnter={handleDrag}
-        onSubmit={(e) => e.preventDefault()}
-      >
-        <input
-          ref={inputRef}
-          type="file"
-          id="input-file-upload"
-          multiple={false}
-          onChange={handleChange}
-        />
-        <label id="label-file-upload" htmlFor="input-file-upload">
-          <div>
-            <p>Drag and drop your file here or</p>
-            <button className="upload-button" onClick={onButtonClick}>
-              Upload a file
-            </button>
-          </div>
+    
         </label>
         {dragActive && (
           <div
