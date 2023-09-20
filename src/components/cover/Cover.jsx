@@ -7,7 +7,7 @@ function Cover() {
     
   return (
     
-       
+       <div></div>
       
   );
 }
